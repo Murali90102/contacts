@@ -7,4 +7,3 @@ RUN apt-get update && \
     mvn clean package
 EXPOSE 8080
 CMD ["mvn", "jetty:run"]
-#demo github web hook
