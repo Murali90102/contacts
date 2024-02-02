@@ -40,4 +40,8 @@ pipeline {
                   }
 	    }
     }
+    post {
+        success{emailext body: '$JOB_NAME is success', subject: '$JOB_NAME is success', to: 'murali.appari@outlook.com'}
+        failure{emailext body: '$JOB_NAME is failure', subject: '$JOB_NAME is failure', to: 'murali.appari@outlook.com'}
+    }
 }
