@@ -5,6 +5,6 @@ COPY src ./src
 RUN apt-get update && \
     apt-get install -y maven && \
     mvn clean package
-EXPOSE 8085
+EXPOSE 8080
 CMD ["mvn", "jetty:run"]
 #demo github web hook
