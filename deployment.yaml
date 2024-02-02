@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: contacts-container
-        image: murali90102/contacts:13
+        image: murali90102/contacts:15
         ports:
         - containerPort: 8080
 ---
